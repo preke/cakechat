@@ -23,6 +23,7 @@ def _get_non_offensive_response_using_fast_sampling(context_tokens_ids, conditio
             context_tokens_ids, _cakechat_model, PREDICTION_MODES.sampling, condition_ids=condition_id)[0][0]
 
         tokenized_response = get_tokens_sequence(response)
+        print(tokenized_response)
         if not _offense_detector.has_offensive_ngrams(tokenized_response):
             return get_pretty_str_from_tokens_sequence(tokenized_response)
 
