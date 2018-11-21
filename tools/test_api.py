@@ -11,7 +11,7 @@ import requests
 from cakechat.config import DEFAULT_CONDITION
 
 _HOST_FQDN = '127.0.0.1'
-_SERVER_PORT = '8000'
+_SERVER_PORT = '8080'
 
 
 def parse_args():
