@@ -24,8 +24,8 @@ def _get_non_offensive_response_using_fast_sampling(context_tokens_ids, conditio
 
         tokenized_response = get_tokens_sequence(response)
         print(tokenized_response)
-        if not _offense_detector.has_offensive_ngrams(tokenized_response):
-            return get_pretty_str_from_tokens_sequence(tokenized_response)
+        #if not _offense_detector.has_offensive_ngrams(tokenized_response):
+        return get_pretty_str_from_tokens_sequence(tokenized_response)
 
     return DEFAULT_RESPONSE
 
